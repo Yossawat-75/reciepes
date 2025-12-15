@@ -6,10 +6,10 @@ class Recipe {
   Recipe(this.imageUrl, this.imgLabel, this.description);
 
   static List<Recipe> samples = [
-  Recipe('assets/images/Green fish curry.webp', 'Green fish curry','555555'),
-  Recipe('assets/images/Larb Muang.webp', 'Larb Muang','555555'),
-  Recipe('assets/images/Pad Thai.webp', 'Pad Thai','555555'),
-  Recipe('assets/images/Sweet thai basil smash cocktail.webp', 'Sweet thai basil smash cocktail','55555'),
-  Recipe('assets/images/Thai pumpkin curry.webp', 'Thai pumpkin curry','5555555'),
+  Recipe('assets/images/uniqlo1.webp', 'เสื้อโปโล ผ้าคอตตอน ลายทาง','เสื้อโปโล ผ้าคอตตอน ลายทาง ผ้าคอตตอน 100% ผ่านกรรมวิธีฟอกเพื่อให้สัมผัสสบายในลุคแคชชวล ลายทางกว้าง'),
+  Recipe('assets/images/uniqlo2.webp', 'เสื้อโปโลสเวตเตอร์ | แขนสั้น, ลายทาง','เสื้อโปโลสเวตเตอร์ | แขนสั้น, ลายทาง ทำจากผ้าคอตตอนเรยอนสัมผัสเรียบลื่น'),
+  Recipe('assets/images/uniqlo3.webp', 'เสื้อโปโลสเวตเตอร์ | แขนสั้น','เสื้อโปโลสเวตเตอร์ | แขนสั้น ทำจากผ้าคอตตอนเรยอนสัมผัสเรียบลื่น ซักเครื่องได้'),
+  Recipe('assets/images/uniqlo4.webp', 'เสื้อสเวตเตอร์ โปโล ผ้าถักลายนูน (Ribbed) แบบซักได้','เสื้อสเวตเตอร์ โปโล ผ้าถักลายนูน (Ribbed) แบบซักได้ สัมผัสนุ่มไม่ระคายผิว ดีไซน์ปกสกิปเปอร์ให้ลุคสวยเนี้ยบช่วงคอเมื่อสวมใส่ตัวเดียว'),
+  Recipe('assets/images/uniqlo5.webp', 'เสื้อโปโล สเวตเตอร์ ผ้าถักลายนูน (Ribbed) แบบซักได้ | ลายทาง','เสื้อโปโล สเวตเตอร์ ผ้าถักลายนูน (Ribbed) แบบซักได้ ดีไซน์สกิปเปอร์หรูหราเพื่อให้ช่วงคอดูโฉบเฉี่ยว'),
 ];
 }
