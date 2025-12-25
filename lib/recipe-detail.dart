@@ -12,38 +12,42 @@ class RecipeDetail extends StatefulWidget {
 
 class _RecipeDetailState extends State<RecipeDetail> {
   int quantity = 1;
-  int price = 390;
 
   @override
   Widget build(BuildContext context) {
-    int totalPrice = price * quantity;
+    int totalPrice = widget.recipe.price * quantity;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Recipe Detail')),
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[
-            Image(image: AssetImage(widget.recipe.imageUrl)),
-            const SizedBox(height: 14.0),
+          children: [
+            Image.asset(widget.recipe.imageUrl),
+            const SizedBox(height: 14),
 
             Text(
               widget.recipe.imgLabel,
               style: const TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.w700,
-                fontFamily: 'Palatino',
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
               ),
             ),
 
-            const SizedBox(height: 14.0),
+            const SizedBox(height: 8),
 
             Text(
               widget.recipe.description,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 16.0),
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 20),
+
+            Text(
+              'ราคา: ฿${widget.recipe.price}',
+              style: const TextStyle(fontSize: 18),
+            ),
+
+            const SizedBox(height: 16),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -58,15 +62,10 @@ class _RecipeDetailState extends State<RecipeDetail> {
                         }
                       : null,
                 ),
-
                 Text(
                   quantity.toString(),
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: const TextStyle(fontSize: 18),
                 ),
-
                 IconButton(
                   icon: const Icon(Icons.add),
                   onPressed: () {
@@ -81,7 +80,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
             const SizedBox(height: 16),
 
             Text(
-              'Total: ฿$totalPrice',
+              'ราคารวม: ฿$totalPrice',
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
